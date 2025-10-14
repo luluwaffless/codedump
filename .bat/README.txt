@@ -1,0 +1,1 @@
+basically just pre-defined commands so i dont have to copy & paste/manually do everything

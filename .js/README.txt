@@ -1,0 +1,1 @@
+majority of the files here are tampermonkey scripts i made, some are node.js scripts or regular javascript scripts tho

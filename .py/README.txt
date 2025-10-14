@@ -1,0 +1,1 @@
+there are waaay too many scripts here, and im too lazy to list out the requirements, so just look for imports and install them manually if u want to use them lol

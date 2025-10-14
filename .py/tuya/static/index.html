@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luzes</title>
+    <link rel="icon" type="image/x-icon" href="icons/192x192.png">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ff4800">
+</head>
+
+<body>
+    <div class="container">
+        <label for="device">Dispositivo:</label> <select id="device">
+            <option id="delete"></option>
+            <option value="bulb">Luminária</option>
+            <option value="led">Fita LED</option>
+        </select>
+        <div id="controls" style="display: none;">
+            <label for="switch">Ligar/Desligar:</label> <input type="checkbox" id="switch">
+            <div id="modeDiv" style="display: none;">
+                <label for="mode">Modo:</label> <select id="mode">
+                    <option value="white">Branco</option>
+                    <option value="colour">Cor</option>
+                </select><br>
+                <div id="white" style="display: none;">
+                    <label for="brightness">Brilho:</label> <input type="range" id="brightness" min="0" max="1000" step="1"><br>
+                    <label for="temperature">Temperatura:</label> <input type="range" id="temperature" min="0" max="1000" step="1"><br>
+                    <label for="whiteAdvanced">Avançado:</label> <input type="checkbox" id="whiteAdvanced">
+                </div>
+                <div id="colour" style="display: none;">
+                    <div id="colourRegular">
+                        <label for="color">Cor:</label> <input type="color" id="color" value="#ff0000">
+                    </div>
+                    <div id="colourAdvanced" style="display: none;">
+                        <label for="hue">Matiz:</label> <input id="hue" type="number" min="0" max="360" step="1"><br>
+                        <label for="saturation">Saturação:</label> <input id="saturation" type="number" min="0" max="1000" step="1"><br>
+                        <label for="value">Valor:</label> <input id="value" type="number" min="0" max="1000" step="1">
+                    </div>
+                    <label for="colourAdvancedBool">Avançado:</label> <input type="checkbox" id="colourAdvancedBool">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

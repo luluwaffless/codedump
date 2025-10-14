@@ -1,0 +1,80 @@
+body, select, option, input[type=number] {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+input[type=number] {
+    border: 1px solid #808080;
+}
+
+.container {
+    text-align: center;
+    background-color: #222;
+    padding: 1em;
+    border-radius: 1em;
+    top: 50%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+input[type=range] {
+    width: 100%;
+    height: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #0080ff;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type=range]#brightness {
+    background: linear-gradient(to right, #000000, #ffffff);
+}
+
+input[type=range]#temperature {
+    background: linear-gradient(to right, #ff8000, #ffffff, #0080ff);
+}
+
+input[type=color] {
+    border: 1px solid black;
+};
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #808080;
+    border: 1px solid black;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #808080;
+    border: 1px solid black;
+}
+
+input[type=range]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #808080;
+    border: 1px solid black;
+}
+
+input[type=range]::-moz-range-track {
+    background: transparent;
+}
+
+input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
